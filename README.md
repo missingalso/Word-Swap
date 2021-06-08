@@ -1,2 +1,4 @@
 # Word-Swap
 Javascript program using Node that takes in a sentence (user input) and returns a new sentence with synonyms for any adjectives in that sentence.
+
+Makes use of the prompt, random, thesaurus, and parts-of-speech packages. Uses a lexer to lexify the input sentence, giving us a list of lists where the inner lists contain a word from the sentence and its corresponding part of speech. After this, that list of the lexified components of the sentence is looped over to identify if there are any adjectives (tag is JJ). If there are, we then use the thesaurus package to generate a synonym to replace it. We do this by randomly choosing one of the top five synonyms generated from the thesaurus.find() method. After generating this new word, we index into the list of words in the sentence (non-lexified) and replace the original word with the new word. Finally, the list components are joined together and presented as the altered sentence.
