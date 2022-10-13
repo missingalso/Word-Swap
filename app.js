@@ -3,6 +3,8 @@
 const prompt = require("prompt")
 const rand = require("random")
 const thesaurus = require("thesaurus")
+Ja
+
 const pos = require("parts-of-speech")
 let sent = new Array()
 let topFive = new Array() 
